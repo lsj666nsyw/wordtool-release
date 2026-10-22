@@ -3,87 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Word批量处理助手 - 在线工具 + 下载</title>
+<title>Word批量处理助手 - 在线免费 + ¥4.9 专业版</title>
 <style>
-:root{--p:#2b6cb0;--p2:#1e4e8c;--ink:#1a2233;--ink2:#55617a;--ink3:#8b95a8;--line:#e3e8f0;--bg:#f6f5fb;--card:#fff;--r:16px;--ok:#22c55e;--warn:#f59e0b}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
-.wrap{max-width:900px;margin:0 auto;padding:0 16px}
-.hero{background:linear-gradient(135deg,#1e4e8c,#2b6cb0,#3b82f6);color:#fff;padding:48px 0;text-align:center}
-.hero h1{font-size:30px;font-weight:800;margin-bottom:8px}
-.hero p{opacity:.92;margin-bottom:4px}
-.hero .badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
-.hero .badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:4px 12px;border-radius:999px;font-size:13px}
-.sec{padding:36px 0}
-.sec h2{font-size:22px;font-weight:700;text-align:center;margin-bottom:6px}
-.sec .desc{text-align:center;color:var(--ink2);font-size:15px;margin-bottom:24px}
-.tabs{display:flex;gap:4px;margin-bottom:20px;flex-wrap:wrap}
-.tab{padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:14px;font-weight:600;color:var(--ink2);cursor:pointer;white-space:nowrap;transition:all .15s}
-.tab:hover{border-color:var(--p)}
-.tab.on{background:var(--p);color:#fff;border-color:transparent}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei UI",sans-serif;background:#f6f5fb;color:#1a2233;line-height:1.7}
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+.hero{background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;padding:40px 0;text-align:center}
+.hero h1{font-size:28px;font-weight:800;margin-bottom:8px}
+.hero p{opacity:.92;font-size:14px}
+.hero .price{font-size:48px;font-weight:800;color:#ffd700;margin-top:16px}
+.hero .price small{font-size:16px;font-weight:400;opacity:.8}
+.hero .badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.hero .badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:4px 12px;border-radius:999px;font-size:12px}
+.sec{padding:32px 0}
+.sec h2{font-size:20px;font-weight:700;text-align:center;margin-bottom:6px}
+.sec .desc{text-align:center;color:#55617a;font-size:14px;margin-bottom:20px}
+.tabs{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap}
+.tab{padding:8px 16px;border-radius:999px;border:1px solid #e3e8f0;background:#fff;font-size:13px;font-weight:600;color:#55617a;cursor:pointer;white-space:nowrap}
+.tab.on{background:#2563eb;color:#fff;border-color:transparent}
 .tool-panel{display:none}
 .tool-panel.on{display:block}
-.upload-area{border:2px dashed var(--line);border-radius:var(--r);padding:40px 20px;text-align:center;cursor:pointer;transition:all .2s;background:var(--card)}
-.upload-area:hover{border-color:var(--p);background:#f8faff}
-.upload-area .icon{font-size:40px;margin-bottom:8px}
-.upload-area p{color:var(--ink2);font-size:14px}
-.upload-area .hint{color:var(--ink3);font-size:12px;margin-top:4px}
+.upload-area{border:2px dashed #e3e8f0;border-radius:14px;padding:32px 20px;text-align:center;cursor:pointer;transition:all .2s;background:#fff}
+.upload-area:hover{border-color:#2563eb;background:#f8faff}
+.upload-area .icon{font-size:36px;margin-bottom:6px}
+.upload-area p{color:#55617a;font-size:13px}
+.upload-area .hint{color:#8b95a8;font-size:11px;margin-top:4px}
 .input-row{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
-.input-row label{font-size:14px;font-weight:600;min-width:60px;padding-top:8px}
-.input-row input[type=text]{flex:1;min-width:200px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;font-family:inherit}
-.input-row input[type=text]:focus{outline:none;border-color:var(--p)}
-.btn{display:inline-block;padding:10px 28px;border-radius:999px;font-size:15px;font-weight:700;text-decoration:none;cursor:pointer;border:none;transition:all .15s}
-.btn.primary{background:var(--p);color:#fff}
-.btn.primary:hover{background:var(--p2)}
-.btn.secondary{background:var(--line);color:var(--ink)}
-.btn:disabled{opacity:.5;cursor:not-allowed}
-.result-area{margin-top:16px}
-.result-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:12px}
-.result-card h4{font-size:14px;font-weight:700;margin-bottom:8px}
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+.input-row label{font-size:13px;font-weight:600;min-width:50px;padding-top:8px}
+.input-row input[type=text]{flex:1;min-width:180px;padding:8px 12px;border:1px solid #e3e8f0;border-radius:8px;font-size:13px}
+.input-row input[type=text]:focus{outline:none;border-color:#2563eb}
+.result-area{margin-top:12px}
+.result-card{background:#fff;border:1px solid #e3e8f0;border-radius:14px;padding:14px;margin-bottom:10px}
+.result-card h4{font-size:13px;font-weight:700;margin-bottom:8px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px}
 .stat-item{background:#f8faff;border-radius:8px;padding:10px;text-align:center}
-.stat-item .num{font-size:24px;font-weight:800;color:var(--p)}
-.stat-item .label{font-size:12px;color:var(--ink3)}
-.text-output{background:#1e293b;color:#e2e8f0;border-radius:8px;padding:12px;font-family:Consolas,monospace;font-size:13px;max-height:200px;overflow:auto;white-space:pre-wrap;word-break:break-all}
-.img-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
-.img-item{border:1px solid var(--line);border-radius:8px;overflow:hidden;text-align:center}
-.img-item img{width:100%;height:80px;object-fit:contain;background:#f8faff}
-.img-item .name{font-size:11px;color:var(--ink3);padding:4px;word-break:break-all}
-.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
-.price-card{background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:24px;text-align:center}
-.price-card.hot{border-color:var(--p);box-shadow:0 6px 24px rgba(43,108,176,.12)}
-.price-card .plan{font-size:13px;font-weight:700;color:var(--ink3);text-transform:uppercase}
-.price-card .amount{font-size:34px;font-weight:800;margin:8px 0}
-.price-card ul{list-style:none;padding:0;margin:14px 0;font-size:13px;color:var(--ink2)}
-.price-card li::before{content:"✓ ";color:var(--ok);font-weight:700}
-.price-card .btn{display:block;margin-top:12px}
-.contact{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;text-align:center}
-.contact h2{font-size:20px;margin-bottom:8px}
-.contact .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
-footer{text-align:center;padding:28px;color:var(--ink3);font-size:13px;border-top:1px solid var(--line);margin-top:20px}
-.toast{position:fixed;top:20px;right:20px;background:var(--ink);color:#fff;padding:12px 20px;border-radius:8px;font-size:14px;z-index:999;opacity:0;transition:opacity .3s;pointer-events:none}
+.stat-item .num{font-size:22px;font-weight:800;color:#2563eb}
+.stat-item .label{font-size:11px;color:#8b95a8}
+.text-output{background:#1e293b;color:#e2e8f0;border-radius:8px;padding:12px;font-family:Consolas,monospace;font-size:12px;max-height:180px;overflow:auto;white-space:pre-wrap;word-break:break-all}
+.img-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px}
+.img-item{border:1px solid #e3e8f0;border-radius:8px;overflow:hidden;text-align:center}
+.img-item img{width:100%;height:70px;object-fit:contain;background:#f8faff}
+.img-item .name{font-size:10px;color:#8b95a8;padding:4px;word-break:break-all}
+/* Pro section */
+.pro-card{background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff;border-radius:16px;padding:32px 24px;text-align:center;margin-bottom:20px}
+.pro-card .price{font-size:56px;font-weight:800;color:#ffd700}
+.pro-card .price small{font-size:18px;font-weight:400;opacity:.8}
+.pro-card h2{color:#fff;font-size:24px;margin-bottom:8px}
+.pro-card p{opacity:.9;font-size:14px;margin-bottom:16px}
+.pro-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:20px 0}
+.pro-features div{background:rgba(255,255,255,.1);border-radius:8px;padding:10px;font-size:12px}
+.pro-features div::before{content:"✓ ";color:#4ade80;font-weight:700}
+/* Contact */
+.contact{background:#fff;border:1px solid #e3e8f0;border-radius:16px;padding:24px;text-align:center}
+.contact h2{font-size:18px;margin-bottom:8px}
+.contact .wx{font-size:20px;font-weight:700;color:#07c160;margin:12px 0}
+.contact .wx-id{background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:10px 20px;display:inline-block;font-family:Consolas,monospace;font-size:16px;color:#166534}
+.contact .note{font-size:12px;color:#8b95a8;margin-top:12px}
+.contact .steps{text-align:left;margin-top:16px;font-size:13px;color:#55617a}
+.contact .steps li{margin-bottom:6px}
+footer{text-align:center;padding:24px;color:#8b95a8;font-size:12px;border-top:1px solid #e3e8f0;margin-top:20px}
+.toast{position:fixed;top:20px;right:20px;background:#1a2233;color:#fff;padding:10px 18px;border-radius:8px;font-size:13px;z-index:999;opacity:0;transition:opacity .3s}
 .toast.show{opacity:1}
-@media(max-width:600px){.hero h1{font-size:24px}.input-row{flex-direction:column}.input-row label{padding-top:0}}
+@media(max-width:600px){.hero h1{font-size:22px}.pro-card .price{font-size:42px}}
 </style>
 </head>
 <body>
+
 <div class="hero">
   <div class="wrap">
     <h1>📄 Word 批量处理助手</h1>
-    <p>在线工具 + 桌面软件</p>
-    <p style="font-size:13px;opacity:.7">批量替换 · 提取文本 · 提取图片 · 文档统计</p>
+    <p>在线免费用 · 专业版仅 ¥4.9</p>
+    <div class="price">¥4.9 <small>一次购买，永久使用</small></div>
     <div class="badges">
-      <span class="badge">✓ 浏览器直接用</span>
+      <span class="badge">✓ 在线免费</span>
       <span class="badge">✓ 文件不上传</span>
-      <span class="badge">✓ 免费在线版</span>
+      <span class="badge">✓ Windows 桌面版</span>
     </div>
   </div>
 </div>
 
+<!-- Online Tool -->
 <div class="sec" id="tool">
   <div class="wrap">
     <h2>🛠️ 在线 Word 工具（免费）</h2>
-    <p class="desc">上传 DOCX 文件，在浏览器里直接处理，文件不会上传到服务器</p>
+    <p class="desc">上传 DOCX，浏览器里直接处理，不用下载软件</p>
     <div class="tabs">
       <div class="tab on" onclick="showTab(0)">批量替换</div>
       <div class="tab" onclick="showTab(1)">提取文本</div>
@@ -92,18 +95,10 @@ footer{text-align:center;padding:28px;color:var(--ink3);font-size:13px;border-to
     </div>
 
     <div class="tool-panel on" id="panel-0">
-      <div class="input-row">
-        <label>查找：</label>
-        <input type="text" id="find-text" placeholder="输入要查找的文字">
-      </div>
-      <div class="input-row">
-        <label>替换为：</label>
-        <input type="text" id="replace-text" placeholder="输入替换后的文字">
-      </div>
+      <div class="input-row"><label>查找：</label><input type="text" id="find-text" placeholder="输入要查找的文字"></div>
+      <div class="input-row"><label>替换为：</label><input type="text" id="replace-text" placeholder="输入替换后的文字"></div>
       <div class="upload-area" onclick="document.getElementById('file-replace').click()">
-        <div class="icon">📄</div>
-        <p>点击或拖拽上传 DOCX 文件</p>
-        <div class="hint">支持 .docx 格式，文件不会上传到服务器</div>
+        <div class="icon">📄</div><p>点击或拖拽上传 DOCX</p><div class="hint">文件不会上传到服务器</div>
       </div>
       <input type="file" id="file-replace" accept=".docx" style="display:none" onchange="handleReplace(this)">
       <div class="result-area" id="result-replace"></div>
@@ -111,9 +106,7 @@ footer{text-align:center;padding:28px;color:var(--ink3);font-size:13px;border-to
 
     <div class="tool-panel" id="panel-1">
       <div class="upload-area" onclick="document.getElementById('file-text').click()">
-        <div class="icon">📝</div>
-        <p>点击或拖拽上传 DOCX 文件</p>
-        <div class="hint">提取所有文字内容，导出为 TXT</div>
+        <div class="icon">📝</div><p>点击或拖拽上传 DOCX</p><div class="hint">提取文字，导出 TXT</div>
       </div>
       <input type="file" id="file-text" accept=".docx" style="display:none" onchange="handleExtractText(this)">
       <div class="result-area" id="result-text"></div>
@@ -121,9 +114,7 @@ footer{text-align:center;padding:28px;color:var(--ink3);font-size:13px;border-to
 
     <div class="tool-panel" id="panel-2">
       <div class="upload-area" onclick="document.getElementById('file-stats').click()">
-        <div class="icon">📊</div>
-        <p>点击或拖拽上传 DOCX 文件</p>
-        <div class="hint">统计段落数、表格数、图片数、字符数</div>
+        <div class="icon">📊</div><p>点击或拖拽上传 DOCX</p><div class="hint">统计段落/表格/图片/字符数</div>
       </div>
       <input type="file" id="file-stats" accept=".docx" style="display:none" onchange="handleStats(this)">
       <div class="result-area" id="result-stats"></div>
@@ -131,9 +122,7 @@ footer{text-align:center;padding:28px;color:var(--ink3);font-size:13px;border-to
 
     <div class="tool-panel" id="panel-3">
       <div class="upload-area" onclick="document.getElementById('file-images').click()">
-        <div class="icon">🖼️</div>
-        <p>点击或拖拽上传 DOCX 文件</p>
-        <div class="hint">提取文档中所有内嵌图片</div>
+        <div class="icon">🖼️</div><p>点击或拖拽上传 DOCX</p><div class="hint">提取文档中所有图片</div>
       </div>
       <input type="file" id="file-images" accept=".docx" style="display:none" onchange="handleExtractImages(this)">
       <div class="result-area" id="result-images"></div>
@@ -141,86 +130,38 @@ footer{text-align:center;padding:28px;color:var(--ink3);font-size:13px;border-to
   </div>
 </div>
 
-<div class="sec" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-  <div class="wrap">
-    <h2>📋 6 大核心功能</h2>
-    <p class="desc">在线版免费试用，专业版更多功能</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
-      <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px">
-        <div style="font-size:28px;margin-bottom:8px">🔄</div>
-        <h3 style="font-size:15px;margin-bottom:6px">批量替换</h3>
-        <p style="font-size:13px;color:var(--ink2)">段落/表格/页眉页脚查找替换</p>
-      </div>
-      <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px">
-        <div style="font-size:28px;margin-bottom:8px">📝</div>
-        <h3 style="font-size:15px;margin-bottom:6px">提取文本</h3>
-        <p style="font-size:13px;color:var(--ink2)">DOCX 正文+表格导出为 TXT</p>
-      </div>
-      <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px">
-        <div style="font-size:28px;margin-bottom:8px">📊</div>
-        <h3 style="font-size:15px;margin-bottom:6px">文档统计</h3>
-        <p style="font-size:13px;color:var(--ink2)">段落/表格/图片/字符数</p>
-      </div>
-      <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px">
-        <div style="font-size:28px;margin-bottom:8px">🖼️</div>
-        <h3 style="font-size:15px;margin-bottom:6px">提取图片</h3>
-        <p style="font-size:13px;color:var(--ink2)">一键导出所有内嵌图片</p>
-      </div>
-      <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px">
-        <div style="font-size:28px;margin-bottom:8px">📎</div>
-        <h3 style="font-size:15px;margin-bottom:6px">文档合并</h3>
-        <p style="font-size:13px;color:var(--ink2)">多个 Word 合并为一个（专业版）</p>
-      </div>
-      <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px">
-        <div style="font-size:28px;margin-bottom:8px">💧</div>
-        <h3 style="font-size:15px;margin-bottom:6px">水印</h3>
-        <p style="font-size:13px;color:var(--ink2)">文字/图片水印（专业版）</p>
-      </div>
-    </div>
-  </div>
-</div>
-
+<!-- Pro Version -->
 <div class="sec">
   <div class="wrap">
-    <h2>💰 价格方案</h2>
-    <p class="desc">在线版免费试用，专业版一次购买永久使用</p>
-    <div class="price-grid">
-      <div class="price-card">
-        <div class="plan">在线版</div>
-        <div class="amount" style="color:var(--ok)">免费</div>
-        <ul>
-          <li>批量替换</li><li>提取文本</li><li>文档统计</li><li>提取图片</li><li>单文件处理</li>
-        </ul>
-        <a class="btn secondary" href="#tool">免费使用</a>
-      </div>
-      <div class="price-card hot">
-        <div class="plan">专业版 🔥</div>
-        <div class="amount">¥199<small style="font-size:14px;font-weight:400;color:var(--ink3)"> 一次性</small></div>
-        <ul>
-          <li>在线版全部功能</li><li>桌面软件（Windows）</li><li>文档合并</li><li>文字/图片水印</li><li>批量处理多个文件</li><li>永久更新</li>
-        </ul>
-        <a class="btn primary" href="#contact">立即购买</a>
+    <div class="pro-card">
+      <h2>🔥 Word 批量处理助手 专业版</h2>
+      <p>桌面软件，功能更全，一次购买永久使用</p>
+      <div class="price">¥4.9</div>
+      <p style="font-size:13px;opacity:.8">比在线版多：批量处理、文档合并、水印、多文件处理</p>
+      <div class="pro-features">
+        <div>批量处理多个文件</div><div>文档合并</div><div>文字/图片水印</div><div>导出纯文本</div><div>永久更新</div><div>不限设备</div>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="sec" id="contact">
-  <div class="wrap">
-    <div class="contact">
+    <div class="contact" id="contact">
       <h2>📞 购买专业版</h2>
-      <p>微信 / QQ 联系，付款后发送软件包 + 使用说明</p>
-      <div class="btns">
-        <a class="btn primary" href="https://work.weixin.qq.com" target="_blank">微信联系</a>
-        <a class="btn secondary" href="https://www.taobao.com" target="_blank">淘宝下单</a>
+      <p style="font-size:15px;margin-bottom:4px">扫码支付 <b style="color:#e11d48;font-size:20px">¥4.9</b>，加微信发软件包</p>
+      <div style="margin:16px auto;text-align:center">
+        <img src="wechat-pay-qr.jpg" alt="微信收款码" style="width:220px;max-width:80%;border-radius:12px;border:2px solid #07c160;box-shadow:0 4px 16px rgba(7,193,96,.2)">
+        <div style="margin-top:8px;font-size:13px;color:#07c160;font-weight:700">💬 微信扫码 · 长按识别</div>
       </div>
-      <p style="margin-top:16px;font-size:13px;color:var(--ink3)">支持微信/支付宝 · 7天无理由退款 · 永久更新</p>
+      <div class="wx-id">NianShaoYouWeilsj20</div>
+      <div class="note">添加时备注「Word工具」，付款后自动发软件包</div>
+      <ol class="steps">
+        <li>1. 扫上方二维码付 ¥4.9（或加我微信）</li>
+        <li>2. 微信：NianShaoYouWeilsj20</li>
+        <li>3. 收软件包 + 使用说明</li>
+      </ol>
     </div>
   </div>
 </div>
 
 <footer>
-  Word 批量处理助手 v1.0 · 在线版完全免费，文件不上传 · © 2026
+  Word 批量处理助手 v1.0 · 在线版免费 · © 2026
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -228,144 +169,99 @@ footer{text-align:center;padding:28px;color:var(--ink3);font-size:13px;border-to
 <script src="libs/jszip.min.js"></script>
 <script src="libs/mammoth.min.js"></script>
 <script>
-function showTab(n) {
-  document.querySelectorAll('.tab').forEach((t, i) => t.classList.toggle('on', i === n));
-  document.querySelectorAll('.tool-panel').forEach((p, i) => p.classList.toggle('on', i === n));
-}
-function toast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 3000);
-}
-function readFile(file) {
-  return new Promise((resolve, reject) => {
-    const r = new FileReader();
-    r.onload = () => resolve(r.result);
-    r.onerror = reject;
-    r.readAsArrayBuffer(file);
-  });
-}
-function downloadBlob(blob, filename) {
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename;
-  a.click();
-  URL.revokeObjectURL(url);
-}
-function getStem(filename) {
-  const m = filename.match(/^(.*)\.\w+$/);
-  return m ? m[1] : filename;
+function showTab(n){document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('on',i===n));document.querySelectorAll('.tool-panel').forEach((p,i)=>p.classList.toggle('on',i===n))}
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+function readFile(f){return new Promise((r,j)=>{var x=new FileReader();x.onload=()=>r(x.result);x.onerror=j;x.readAsArrayBuffer(f)})}
+function downloadBlob(b,n){var u=URL.createObjectURL(b);var a=document.createElement('a');a.href=u;a.download=n;a.click();URL.revokeObjectURL(u)}
+function getStem(f){var m=f.match(/^(.*)\.\w+$/);return m?m[1]:f}
+
+async function handleReplace(input){
+  var file=input.files[0];if(!file)return;
+  var find=document.getElementById('find-text').value;
+  var replace=document.getElementById('replace-text').value;
+  if(!find){toast('请输入查找内容');return}
+  var result=document.getElementById('result-replace');
+  result.innerHTML='<div class="result-card"><p>⏳ 处理中…</p></div>';
+  try{
+    var buf=await readFile(file);
+    var zip=await JSZip.loadAsync(buf);
+    var docXml=zip.file('word/document.xml');
+    if(!docXml){toast('不是有效的DOCX文件');result.innerHTML='';return}
+    var xml=await docXml.async('string');
+    var esc=find.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    var matches=xml.match(new RegExp(esc,'g'));
+    var count=matches?matches.length:0;
+    var newXml=xml.replace(new RegExp(esc,'g'),replace);
+    zip.file('word/document.xml',newXml);
+    var newBlob=await zip.generateAsync({type:'blob'});
+    var stem=getStem(file.name);
+    downloadBlob(newBlob,stem+'_替换.docx');
+    result.innerHTML='<div class="result-card"><h4>✅ 替换完成</h4><p>共替换 <b style="color:#2563eb">'+count+'</b> 处</p><p style="margin-top:6px;font-size:12px;color:#8b95a8">已下载：'+stem+'_替换.docx</p></div>';
+    toast('替换完成，共'+count+'处');
+  }catch(e){result.innerHTML='<div class="result-card"><p>❌ 失败：'+e.message+'</p></div>';toast('处理失败')}
 }
 
-async function handleReplace(input) {
-  const file = input.files[0];
-  if (!file) return;
-  const find = document.getElementById('find-text').value;
-  const replace = document.getElementById('replace-text').value;
-  if (!find) { toast('请输入查找内容'); return; }
-  const result = document.getElementById('result-replace');
-  result.innerHTML = '<div class="result-card"><p>⏳ 处理中…</p></div>';
-  try {
-    const buf = await readFile(file);
-    const zip = await JSZip.loadAsync(buf);
-    const docXml = zip.file('word/document.xml');
-    if (!docXml) { toast('不是有效的 DOCX 文件'); result.innerHTML = ''; return; }
-    let xml = await docXml.async('string');
-    const escapedFind = find.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const matches = xml.match(new RegExp(escapedFind, 'g'));
-    const count = matches ? matches.length : 0;
-    const newXml = xml.replace(new RegExp(escapedFind, 'g'), replace);
-    zip.file('word/document.xml', newXml);
-    const newBlob = await zip.generateAsync({ type: 'blob' });
-    const stem = getStem(file.name);
-    downloadBlob(newBlob, stem + '_替换.docx');
-    result.innerHTML = '<div class="result-card"><h4>✅ 替换完成</h4><p>共替换 <b style="color:var(--p)">' + count + '</b> 处</p><p style="margin-top:8px;font-size:13px;color:var(--ink3)">文件已下载：' + stem + '_替换.docx</p></div>';
-    toast('替换完成，共 ' + count + ' 处');
-  } catch (e) {
-    result.innerHTML = '<div class="result-card"><p>❌ 处理失败：' + e.message + '</p></div>';
-    toast('处理失败');
-  }
+async function handleExtractText(input){
+  var file=input.files[0];if(!file)return;
+  var result=document.getElementById('result-text');
+  result.innerHTML='<div class="result-card"><p>⏳ 提取中…</p></div>';
+  try{
+    var ab=await readFile(file);
+    var text=await mammoth.extractRawText({arrayBuffer:ab});
+    var stem=getStem(file.name);
+    var blob=new Blob([text.value],{type:'text/plain;charset=utf-8'});
+    downloadBlob(blob,stem+'.txt');
+    result.innerHTML='<div class="result-card"><h4>✅ 提取完成</h4><p>共 <b style="color:#2563eb">'+text.value.length+'</b> 字符</p><p style="margin-top:6px;font-size:12px;color:#8b95a8">已下载：'+stem+'.txt</p><div style="margin-top:10px"><div class="text-output">'+text.value.substring(0,300)+(text.value.length>300?'...':'')+'</div></div></div>';
+    toast('提取完成');
+  }catch(e){result.innerHTML='<div class="result-card"><p>❌ 失败：'+e.message+'</p></div>';toast('提取失败')}
 }
 
-async function handleExtractText(input) {
-  const file = input.files[0];
-  if (!file) return;
-  const result = document.getElementById('result-text');
-  result.innerHTML = '<div class="result-card"><p>⏳ 提取中…</p></div>';
-  try {
-    const arrayBuffer = await readFile(file);
-    const text = await mammoth.extractRawText({ arrayBuffer });
-    const stem = getStem(file.name);
-    const blob = new Blob([text.value], { type: 'text/plain;charset=utf-8' });
-    downloadBlob(blob, stem + '.txt');
-    result.innerHTML = '<div class="result-card"><h4>✅ 提取完成</h4><p>共 <b style="color:var(--p)">' + text.value.length + '</b> 字符</p><p style="margin-top:8px;font-size:13px;color:var(--ink3)">文件已下载：' + stem + '.txt</p><div style="margin-top:12px"><div class="text-output">' + text.value.substring(0, 500) + (text.value.length > 500 ? '...' : '') + '</div></div></div>';
-    toast('文本提取完成');
-  } catch (e) {
-    result.innerHTML = '<div class="result-card"><p>❌ 提取失败：' + e.message + '</p></div>';
-    toast('提取失败');
-  }
-}
-
-async function handleStats(input) {
-  const file = input.files[0];
-  if (!file) return;
-  const result = document.getElementById('result-stats');
-  result.innerHTML = '<div class="result-card"><p>⏳ 统计中…</p></div>';
-  try {
-    const buf = await readFile(file);
-    const zip = await JSZip.loadAsync(buf);
-    const docXml = await zip.file('word/document.xml').async('string');
-    const paraCount = (docXml.match(/<w:p[ >]/g) || []).length;
-    const tblCount = (docXml.match(/<w:tbl>/g) || []).length;
-    const mediaFiles = Object.keys(zip.files).filter(f => f.startsWith('word/media/'));
-    const rowCount = (docXml.match(/<w:tr[ >]/g) || []).length;
-    const textMatch = docXml.match(/<w:t[^>]*>([^<]*)<\/w:t>/g) || [];
-    const charCount = textMatch.join('').length;
-    result.innerHTML = '<div class="result-card"><h4>📊 ' + file.name + '</h4><div class="stats-grid">' +
-      '<div class="stat-item"><div class="num">' + paraCount + '</div><div class="label">段落</div></div>' +
-      '<div class="stat-item"><div class="num">' + tblCount + '</div><div class="label">表格</div></div>' +
-      '<div class="stat-item"><div class="num">' + rowCount + '</div><div class="label">表格行</div></div>' +
-      '<div class="stat-item"><div class="num">' + mediaFiles.length + '</div><div class="label">图片</div></div>' +
-      '<div class="stat-item"><div class="num">' + charCount + '</div><div class="label">字符</div></div>' +
+async function handleStats(input){
+  var file=input.files[0];if(!file)return;
+  var result=document.getElementById('result-stats');
+  result.innerHTML='<div class="result-card"><p>⏳ 统计中…</p></div>';
+  try{
+    var buf=await readFile(file);
+    var zip=await JSZip.loadAsync(buf);
+    var xml=await zip.file('word/document.xml').async('string');
+    var para=(xml.match(/<w:p[ >]/g)||[]).length;
+    var tbl=(xml.match(/<w:tbl>/g)||[]).length;
+    var media=Object.keys(zip.files).filter(f=>f.startsWith('word/media/'));
+    var rows=(xml.match(/<w:tr[ >]/g)||[]).length;
+    var texts=xml.match(/<w:t[^>]*>([^<]*)<\/w:t>/g)||[];
+    var chars=texts.join('').length;
+    result.innerHTML='<div class="result-card"><h4>📊 '+file.name+'</h4><div class="stats-grid">'+
+      '<div class="stat-item"><div class="num">'+para+'</div><div class="label">段落</div></div>'+
+      '<div class="stat-item"><div class="num">'+tbl+'</div><div class="label">表格</div></div>'+
+      '<div class="stat-item"><div class="num">'+rows+'</div><div class="label">表格行</div></div>'+
+      '<div class="stat-item"><div class="num">'+media.length+'</div><div class="label">图片</div></div>'+
+      '<div class="stat-item"><div class="num">'+chars+'</div><div class="label">字符</div></div>'+
       '</div></div>';
     toast('统计完成');
-  } catch (e) {
-    result.innerHTML = '<div class="result-card"><p>❌ 统计失败：' + e.message + '</p></div>';
-    toast('统计失败');
-  }
+  }catch(e){result.innerHTML='<div class="result-card"><p>❌ 失败：'+e.message+'</p></div>';toast('统计失败')}
 }
 
-async function handleExtractImages(input) {
-  const file = input.files[0];
-  if (!file) return;
-  const result = document.getElementById('result-images');
-  result.innerHTML = '<div class="result-card"><p>⏳ 提取中…</p></div>';
-  try {
-    const buf = await readFile(file);
-    const zip = await JSZip.loadAsync(buf);
-    const mediaFiles = Object.keys(zip.files).filter(f => f.startsWith('word/media/'));
-    if (mediaFiles.length === 0) {
-      result.innerHTML = '<div class="result-card"><p>这个文档里没有图片</p></div>';
-      return;
+async function handleExtractImages(input){
+  var file=input.files[0];if(!file)return;
+  var result=document.getElementById('result-images');
+  result.innerHTML='<div class="result-card"><p>⏳ 提取中…</p></div>';
+  try{
+    var buf=await readFile(file);
+    var zip=await JSZip.loadAsync(buf);
+    var media=Object.keys(zip.files).filter(f=>f.startsWith('word/media/'));
+    if(media.length===0){result.innerHTML='<div class="result-card"><p>没有图片</p></div>';return}
+    var stem=getStem(file.name);
+    var html='<div class="result-card"><h4>✅ 提取了'+media.length+'张图片</h4><p style="font-size:12px;color:#8b95a8">已全部下载</p><div class="img-grid" style="margin-top:10px">';
+    for(var f of media){
+      var data=await zip.file(f).async('dataURL');
+      var name=f.split('/').pop();
+      downloadBlob(await zip.file(f).async('blob'),stem+'_'+name);
+      html+='<div class="img-item"><img src="'+data+'"><div class="name">'+name+'</div></div>';
     }
-    const stem = getStem(file.name);
-    let html = '<div class="result-card"><h4>✅ 提取了 ' + mediaFiles.length + ' 张图片</h4><p style="font-size:13px;color:var(--ink3)">图片已全部下载</p><div class="img-grid" style="margin-top:12px">';
-    for (const f of mediaFiles) {
-      const data = await zip.file(f).async('dataURL');
-      const name = f.split('/').pop();
-      const ext = name.split('.').pop().toLowerCase();
-      downloadBlob(await zip.file(f).async('blob'), stem + '_' + name);
-      html += '<div class="img-item"><img src="' + data + '"><div class="name">' + name + '</div></div>';
-    }
-    html += '</div></div>';
-    result.innerHTML = html;
-    toast('提取了 ' + mediaFiles.length + ' 张图片');
-  } catch (e) {
-    result.innerHTML = '<div class="result-card"><p>❌ 提取失败：' + e.message + '</p></div>';
-    toast('提取失败');
-  }
+    html+='</div></div>';
+    result.innerHTML=html;
+    toast('提取了'+media.length+'张图片');
+  }catch(e){result.innerHTML='<div class="result-card"><p>❌ 失败：'+e.message+'</p></div>';toast('提取失败')}
 }
 </script>
 </body>
