@@ -120,6 +120,10 @@ section{padding:84px 0}
 @media(max-width:520px){.feats{grid-template-columns:1fr}}
 .feat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px;transition:.2s}
 .feat:hover{border-color:var(--line2);transform:translateY(-2px)}
+.feat-wide{grid-column:1/-1;display:flex;align-items:center;gap:18px}
+.feat-wide .fi{margin-bottom:0;flex:none}
+.feat-wide .fw-txt{flex:1;min-width:0}
+.feat-wide .tag{margin-top:0;flex:none}
 .fi{width:34px;height:34px;border-radius:9px;background:rgba(91,140,255,.12);color:var(--acc);display:grid;place-items:center;font-size:16px;margin-bottom:14px}
 .feat h3{font-size:14.5px;font-weight:600;margin-bottom:6px}
 .feat p{font-size:13px;color:var(--tx2);line-height:1.55}
@@ -336,7 +340,7 @@ body.has-mbar section:last-of-type{padding-bottom:110px}
       <div class="feat rv"><div class="fi">◫</div><h3>提取图片</h3><p>批量抽出文档内嵌图片，保持原始分辨率与格式。</p><span class="tag tag-free">在线免费</span></div>
       <div class="feat rv"><div class="fi">⧉</div><h3>文档合并</h3><p>多个 Word 按顺序合成一个，自动插入分页符。</p><span class="tag tag-pro">专业版</span></div>
       <div class="feat rv"><div class="fi">◌</div><h3>水印</h3><p>文字与图片水印，透明度、字号、角度可调，每页生效。</p><span class="tag tag-pro">专业版</span></div>
-      <div class="feat rv"><div class="fi">▤</div><h3>敏感信息脱敏</h3><p>手机号、身份证、邮箱、银行卡号批量打码，保留首尾与原有格式。</p><span class="tag tag-pro">专业版</span></div>
+      <div class="feat feat-wide rv"><div class="fi">▤</div><div class="fw-txt"><h3>敏感信息脱敏</h3><p>手机号、身份证、邮箱、银行卡号批量打码，保留首尾与原有格式。</p></div><span class="tag tag-pro">专业版</span></div>
     </div>
   </div>
 </section>
